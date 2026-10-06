@@ -1,17 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Camera Permission -->
+    <!-- Permission kamera -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <!-- GPS / Location Permissions -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- Storage (untuk menyimpan foto) -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- Fitur hardware -->
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <!-- Permission penyimpanan (untuk Android < 13) -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> -->
+
     <application
-        android:label="flutter_class"
+        android:label="tester_camp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
